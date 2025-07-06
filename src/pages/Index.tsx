@@ -155,8 +155,8 @@ const Index = () => {
               backgroundImage: 'url(/lovable-uploads/16148200-7bc2-414c-b328-a94beb787b73.png)'
             }}
           >
-            {/* Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+            {/* Overlay - Darkened */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/70 to-black/30"></div>
           </div>
 
           {/* Content */}
