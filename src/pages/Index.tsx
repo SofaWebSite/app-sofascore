@@ -5,7 +5,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-white flex">
       {/* Left Side - App Features */}
-      <div className="flex-1 bg-black text-white p-8 lg:p-16 flex flex-col justify-between relative overflow-hidden">
+      <div className="w-2/5 bg-black text-white p-8 lg:p-16 flex flex-col justify-between relative overflow-hidden">
         {/* Logo */}
         <div className="flex items-center mb-8">
           <img 
@@ -55,7 +55,7 @@ const Index = () => {
       </div>
 
       {/* Right Side - Hero Section */}
-      <div className="flex-1 relative overflow-hidden">
+      <div className="w-3/5 relative overflow-hidden">
         {/* Background Image - Now using the app feature image */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -81,22 +81,6 @@ const Index = () => {
             <p className="text-xl lg:text-2xl text-gray-200 mb-8 leading-relaxed">
               Get Live scores, stats, and free match streams.
             </p>
-
-            {/* Features Grid */}
-            <div className="grid grid-cols-3 gap-8 mt-12 text-center">
-              <div className="space-y-2">
-                <div className="text-3xl font-bold text-[#384df5]">Live</div>
-                <div className="text-sm text-gray-300">Real-time Scores</div>
-              </div>
-              <div className="space-y-2">
-                <div className="text-3xl font-bold text-[#384df5]">Stats</div>
-                <div className="text-sm text-gray-300">Detailed Analytics</div>
-              </div>
-              <div className="space-y-2">
-                <div className="text-3xl font-bold text-[#384df5]">Free</div>
-                <div className="text-sm text-gray-300">Match Streams</div>
-              </div>
-            </div>
           </div>
         </div>
 
