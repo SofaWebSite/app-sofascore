@@ -107,12 +107,12 @@ const Index = () => {
         {/* App Section - Image and Buttons Side by Side */}
         <div className="px-4" style={{ height: '25vh' }}>
           <div className="flex h-full items-center">
-            {/* Left Side - App Image */}
+            {/* Left Side - App Image - Updated to use new football match interface */}
             <div className="flex-1 flex items-center justify-center">
               <div className="relative w-full max-w-[200px]">
                 <img 
-                  src="/lovable-uploads/05d94f8d-d250-4c10-99f8-f6d86e2f39d3.png"
-                  alt="Football Gaming Experience"
+                  src="/lovable-uploads/d9bdb349-9590-4516-bba9-604ed471669f.png"
+                  alt="Football Match Interface"
                   className="w-full h-auto rounded-xl shadow-2xl"
                 />
               </div>
