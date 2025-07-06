@@ -8,6 +8,7 @@ const Index = () => {
     // Check if font is already loaded
     if (document.fonts.check("1em Poppins")) {
       setFontLoaded(true);
+      console.log("Poppins font already available");
       return;
     }
 
@@ -17,6 +18,8 @@ const Index = () => {
         await document.fonts.load("1em Poppins");
         setFontLoaded(true);
         console.log("Poppins font loaded successfully");
+        // Force a style recalculation
+        document.body.style.fontFamily = 'Poppins, sans-serif';
       } catch (error) {
         console.error("Failed to load Poppins font:", error);
         // Set to true anyway to show content
@@ -30,16 +33,16 @@ const Index = () => {
   // Show loading state while font is loading
   if (!fontLoaded) {
     return (
-      <div className="min-h-screen bg-black flex items-center justify-center">
+      <div className="min-h-screen bg-black flex items-center justify-center" style={{ fontFamily: 'Poppins, sans-serif' }}>
         <div className="text-white text-lg">Loading...</div>
       </div>
     );
   }
 
   return (
-    <>
+    <div style={{ fontFamily: 'Poppins, sans-serif' }}>
       {/* Desktop Layout */}
-      <div className="min-h-screen bg-white hidden lg:flex font-poppins">
+      <div className="min-h-screen bg-white hidden lg:flex">
         {/* Left Side - App Features */}
         <div className="w-2/5 bg-black text-white p-16 flex flex-col justify-between relative overflow-hidden">
           {/* Logo */}
@@ -123,7 +126,7 @@ const Index = () => {
       </div>
 
       {/* Mobile Layout */}
-      <div className="lg:hidden bg-black text-white min-h-screen flex flex-col font-poppins">
+      <div className="lg:hidden bg-black text-white min-h-screen flex flex-col">
         {/* Top Section - Logo */}
         <div className="p-6 pt-12">
           <div className="flex items-center justify-center mb-6">
@@ -170,7 +173,7 @@ const Index = () => {
                 className="h-12 w-auto mx-auto"
               />
             </a>
-          </div>
+            </div>
         </div>
 
         {/* Bottom Section - Stadium Background with Text */}
@@ -202,7 +205,7 @@ const Index = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
