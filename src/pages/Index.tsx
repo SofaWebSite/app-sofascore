@@ -100,12 +100,12 @@ const Index = () => {
           </div>
         </div>
 
-        {/* App Section - Image and Buttons Side by Side */}
-        <div className="px-4" style={{ height: '25vh' }}>
-          <div className="flex h-full items-center">
-            {/* Left Side - App Image */}
-            <div className="flex-1 flex items-center justify-center">
-              <div className="relative w-full max-w-[200px]">
+        {/* App Section - Centered Layout */}
+        <div className="px-8" style={{ height: '25vh' }}>
+          <div className="flex flex-col h-full items-center justify-center gap-6">
+            {/* App Image */}
+            <div className="flex items-center justify-center">
+              <div className="relative w-full max-w-[220px]">
                 <img 
                   src="/lovable-uploads/05d94f8d-d250-4c10-99f8-f6d86e2f39d3.png"
                   alt="Football Gaming Experience"
@@ -114,27 +114,27 @@ const Index = () => {
               </div>
             </div>
 
-            {/* Right Side - Download Buttons */}
-            <div className="flex-1 flex items-center justify-center">
-              <div className="flex flex-col gap-3 items-center w-full max-w-[180px]">
+            {/* Download Buttons */}
+            <div className="flex items-center justify-center">
+              <div className="flex flex-row gap-4 items-center">
                 <a 
                   href="https://app.sofascore.com/nixz/chelsea" 
-                  className="inline-block transition-transform hover:scale-105 w-full"
+                  className="inline-block transition-transform hover:scale-105"
                 >
                   <img 
                     src="/lovable-uploads/a01144d8-f22c-49c0-b095-07b9ed8deeb7.png"
                     alt="Download on the App Store"
-                    className="h-10 w-auto mx-auto"
+                    className="h-10 w-auto"
                   />
                 </a>
                 <a 
                   href="https://app.sofascore.com/nixz/chelsea" 
-                  className="inline-block transition-transform hover:scale-105 w-full"
+                  className="inline-block transition-transform hover:scale-105"
                 >
                   <img 
                     src="/lovable-uploads/adfa2dd5-6e97-46f8-adb2-0742dfea3aca.png"
                     alt="Get it on Google Play"
-                    className="h-10 w-auto mx-auto"
+                    className="h-10 w-auto"
                   />
                 </a>
               </div>
