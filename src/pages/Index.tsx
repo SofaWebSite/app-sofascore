@@ -5,42 +5,34 @@ const Index = () => {
   const [fontLoaded, setFontLoaded] = useState(false);
 
   useEffect(() => {
-    // Check if font is already loaded
-    if (document.fonts.check("1em Poppins")) {
-      setFontLoaded(true);
-      console.log("Poppins font already available");
-      return;
-    }
-
-    // Load font and wait for it to be ready
-    const loadFont = async () => {
-      try {
-        await document.fonts.load("1em Poppins");
+    // Force Poppins font on the entire document
+    document.documentElement.style.fontFamily = 'Poppins, sans-serif';
+    document.body.style.fontFamily = 'Poppins, sans-serif';
+    
+    // Simple font load check
+    const checkFont = () => {
+      if (document.fonts.check('12px Poppins')) {
         setFontLoaded(true);
-        console.log("Poppins font loaded successfully");
-        // Force a style recalculation
-        document.body.style.fontFamily = 'Poppins, sans-serif';
-      } catch (error) {
-        console.error("Failed to load Poppins font:", error);
-        // Set to true anyway to show content
-        setFontLoaded(true);
+        console.log("Poppins font is ready");
+      } else {
+        console.log("Waiting for Poppins font...");
+        setTimeout(checkFont, 100);
       }
     };
-
-    loadFont();
+    
+    checkFont();
   }, []);
 
-  // Show loading state while font is loading
   if (!fontLoaded) {
     return (
-      <div className="min-h-screen bg-black flex items-center justify-center" style={{ fontFamily: 'Poppins, sans-serif' }}>
-        <div className="text-white text-lg">Loading...</div>
+      <div className="min-h-screen bg-black flex items-center justify-center font-poppins">
+        <div className="text-white text-lg font-poppins">Loading...</div>
       </div>
     );
   }
 
   return (
-    <div style={{ fontFamily: 'Poppins, sans-serif' }}>
+    <div className="font-poppins">
       {/* Desktop Layout */}
       <div className="min-h-screen bg-white hidden lg:flex">
         {/* Left Side - App Features */}
@@ -52,7 +44,7 @@ const Index = () => {
               alt="SofaScore Logo" 
               className="w-8 h-8 mr-3"
             />
-            <span className="text-2xl font-bold">SofaScore</span>
+            <span className="text-2xl font-bold font-poppins">SofaScore</span>
           </div>
 
           {/* App Feature Image */}
@@ -110,14 +102,14 @@ const Index = () => {
           <div className="relative z-10 h-full flex items-center justify-center p-16">
             <div className="text-center text-white max-w-2xl">
               {/* Main Heading */}
-              <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
-                <span className="block text-2xl lg:text-3xl font-normal mt-2 text-gray-200">
+              <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight font-poppins">
+                <span className="block text-2xl lg:text-3xl font-normal mt-2 text-gray-200 font-poppins">
                   Your Football Fix, Again
                 </span>
               </h1>
 
               {/* Subheading */}
-              <p className="text-xl lg:text-2xl text-gray-200 mb-8 leading-relaxed">
+              <p className="text-xl lg:text-2xl text-gray-200 mb-8 leading-relaxed font-poppins">
                 Get Live scores, stats, and free match streams.
               </p>
             </div>
@@ -135,7 +127,7 @@ const Index = () => {
               alt="SofaScore Logo" 
               className="w-6 h-6 mr-2"
             />
-            <span className="text-xl font-bold">SofaScore</span>
+            <span className="text-xl font-bold font-poppins">SofaScore</span>
           </div>
         </div>
 
@@ -173,7 +165,7 @@ const Index = () => {
                 className="h-12 w-auto mx-auto"
               />
             </a>
-            </div>
+          </div>
         </div>
 
         {/* Bottom Section - Stadium Background with Text */}
@@ -193,12 +185,12 @@ const Index = () => {
           <div className="relative z-10 h-full flex items-end justify-center p-6 pb-12">
             <div className="text-center text-white">
               {/* Main Heading */}
-              <h1 className="text-2xl font-bold mb-2 leading-tight">
+              <h1 className="text-2xl font-bold mb-2 leading-tight font-poppins">
                 Your Football Fix, Again
               </h1>
 
               {/* Subheading */}
-              <p className="text-base text-gray-200 leading-relaxed">
+              <p className="text-base text-gray-200 leading-relaxed font-poppins">
                 Get Live scores, stats, and free match streams.
               </p>
             </div>
