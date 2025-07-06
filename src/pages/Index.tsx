@@ -107,11 +107,11 @@ const Index = () => {
         {/* App Section - Image and Buttons Side by Side */}
         <div className="px-4" style={{ height: '25vh' }}>
           <div className="flex h-full items-center">
-            {/* Left Side - App Image - Updated to use new PSG vs Real Madrid interface */}
+            {/* Left Side - App Image - Updated to use new mobile interface */}
             <div className="flex-1 flex items-center justify-center">
               <div className="relative w-full max-w-[200px]">
                 <img 
-                  src="/lovable-uploads/5f292c38-659c-41a3-9506-f6acd173bb71.png"
+                  src="/lovable-uploads/5b6097c5-8d28-466b-b9a3-a3e5edf1bbc0.png"
                   alt="PSG vs Real Madrid Match Interface"
                   className="w-full h-auto rounded-xl shadow-2xl"
                 />
@@ -148,11 +148,11 @@ const Index = () => {
 
         {/* Bottom Section - New Background Image (No Text) */}
         <div className="relative flex-1 overflow-hidden" style={{ minHeight: '65vh' }}>
-          {/* Background Image - Changed to new football players image */}
+          {/* Background Image - Changed to new blue background with football player */}
           <div 
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style={{
-              backgroundImage: 'url(/lovable-uploads/1745e7dc-f592-4f07-b5cb-e5aad91d38d0.png)'
+              backgroundImage: 'url(/lovable-uploads/69ff83c3-e33e-4728-97c9-2b4dcd7d9062.png)'
             }}
           >
             {/* Overlay - Darkened */}
