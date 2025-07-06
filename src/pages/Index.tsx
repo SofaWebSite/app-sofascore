@@ -1,36 +1,7 @@
 
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
 const Index = () => {
-  const [fontLoaded, setFontLoaded] = useState(false);
-
-  useEffect(() => {
-    // Force Ubuntu font on the entire document
-    document.documentElement.style.fontFamily = 'Ubuntu, sans-serif';
-    document.body.style.fontFamily = 'Ubuntu, sans-serif';
-    
-    // Simple font load check
-    const checkFont = () => {
-      if (document.fonts.check('12px Ubuntu')) {
-        setFontLoaded(true);
-        console.log("Ubuntu font is ready");
-      } else {
-        console.log("Waiting for Ubuntu font...");
-        setTimeout(checkFont, 100);
-      }
-    };
-    
-    checkFont();
-  }, []);
-
-  if (!fontLoaded) {
-    return (
-      <div className="min-h-screen bg-black flex items-center justify-center font-ubuntu">
-        <div className="text-white text-lg font-ubuntu font-bold text-glow">Loading...</div>
-      </div>
-    );
-  }
-
   return (
     <div className="font-ubuntu">
       {/* Desktop Layout */}
@@ -166,7 +137,7 @@ const Index = () => {
                 className="h-12 w-auto mx-auto"
               />
             </a>
-            </div>
+          </div>
         </div>
 
         {/* Bottom Section - Stadium Background with Text */}
