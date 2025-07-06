@@ -20,7 +20,7 @@ const Index = () => {
         <div className="flex-1 flex items-center justify-center mb-8">
           <div className="relative max-w-md">
             <img 
-              src="/lovable-uploads/16148200-7bc2-414c-b328-a94beb787b73.png"
+              src="/lovable-uploads/05d94f8d-d250-4c10-99f8-f6d86e2f39d3.png"
               alt="Football Gaming Experience"
               className="w-full h-auto rounded-2xl shadow-2xl"
             />
@@ -60,7 +60,7 @@ const Index = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: 'url(/lovable-uploads/05d94f8d-d250-4c10-99f8-f6d86e2f39d3.png)'
+            backgroundImage: 'url(/lovable-uploads/16148200-7bc2-414c-b328-a94beb787b73.png)'
           }}
         >
           {/* Overlay */}
