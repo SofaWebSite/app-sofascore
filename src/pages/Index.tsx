@@ -100,40 +100,45 @@ const Index = () => {
           </div>
         </div>
 
-        {/* App Feature Image */}
-        <div className="px-6 pb-6">
-          <div className="relative max-w-xs mx-auto">
-            <img 
-              src="/lovable-uploads/05d94f8d-d250-4c10-99f8-f6d86e2f39d3.png"
-              alt="Football Gaming Experience"
-              className="w-full h-auto rounded-xl shadow-2xl"
-            />
-          </div>
-        </div>
+        {/* App Section - Image and Buttons Side by Side */}
+        <div className="px-6 pb-6" style={{ height: '35vh' }}>
+          <div className="flex gap-6 h-full items-center">
+            {/* Left Side - App Image */}
+            <div className="flex-1 flex items-center justify-center">
+              <div className="relative max-w-[180px]">
+                <img 
+                  src="/lovable-uploads/05d94f8d-d250-4c10-99f8-f6d86e2f39d3.png"
+                  alt="Football Gaming Experience"
+                  className="w-full h-auto rounded-xl shadow-2xl"
+                />
+              </div>
+            </div>
 
-        {/* Download Buttons */}
-        <div className="px-6 pb-6">
-          <div className="flex flex-row gap-3 items-center justify-center max-w-sm mx-auto">
-            <a 
-              href="https://app.sofascore.com/nixz/chelsea" 
-              className="inline-block transition-transform hover:scale-105 flex-1"
-            >
-              <img 
-                src="/lovable-uploads/a01144d8-f22c-49c0-b095-07b9ed8deeb7.png"
-                alt="Download on the App Store"
-                className="h-10 w-auto mx-auto"
-              />
-            </a>
-            <a 
-              href="https://app.sofascore.com/nixz/chelsea" 
-              className="inline-block transition-transform hover:scale-105 flex-1"
-            >
-              <img 
-                src="/lovable-uploads/adfa2dd5-6e97-46f8-adb2-0742dfea3aca.png"
-                alt="Get it on Google Play"
-                className="h-10 w-auto mx-auto"
-              />
-            </a>
+            {/* Right Side - Download Buttons */}
+            <div className="flex-1 flex items-center justify-center">
+              <div className="flex flex-col gap-4 items-center w-full max-w-[200px]">
+                <a 
+                  href="https://app.sofascore.com/nixz/chelsea" 
+                  className="inline-block transition-transform hover:scale-105 w-full"
+                >
+                  <img 
+                    src="/lovable-uploads/a01144d8-f22c-49c0-b095-07b9ed8deeb7.png"
+                    alt="Download on the App Store"
+                    className="h-12 w-auto mx-auto"
+                  />
+                </a>
+                <a 
+                  href="https://app.sofascore.com/nixz/chelsea" 
+                  className="inline-block transition-transform hover:scale-105 w-full"
+                >
+                  <img 
+                    src="/lovable-uploads/adfa2dd5-6e97-46f8-adb2-0742dfea3aca.png"
+                    alt="Get it on Google Play"
+                    className="h-12 w-auto mx-auto"
+                  />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
 
