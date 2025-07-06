@@ -16,26 +16,19 @@ const Index = () => {
           <span className="text-2xl font-bold">SofaScore</span>
         </div>
 
-        {/* App Feature Image */}
+        {/* App Feature Image - Now using the background image */}
         <div className="flex-1 flex items-center justify-center mb-8">
           <div className="relative max-w-md">
             <img 
-              src="/lovable-uploads/16148200-7bc2-414c-b328-a94beb787b73.png"
+              src="/lovable-uploads/05d94f8d-d250-4c10-99f8-f6d86e2f39d3.png"
               alt="Football Gaming Experience"
               className="w-full h-auto rounded-2xl shadow-2xl"
             />
           </div>
         </div>
 
-        {/* Description Text */}
+        {/* Download Buttons */}
         <div className="max-w-lg">
-          <p className="text-lg text-gray-300 leading-relaxed mb-8">
-            Experience the thrill of live football like never before. Get real-time scores, 
-            detailed statistics, and enjoy free match streams all in one place. 
-            Connect with fellow football fans worldwide.
-          </p>
-
-          {/* Download Buttons */}
           <div className="flex flex-col sm:flex-row gap-4">
             <a 
               href="#" 
@@ -59,22 +52,15 @@ const Index = () => {
             </a>
           </div>
         </div>
-
-        {/* Footer Links */}
-        <div className="flex gap-6 text-sm text-gray-400 mt-8">
-          <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-          <span>•</span>
-          <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
-        </div>
       </div>
 
       {/* Right Side - Hero Section */}
       <div className="flex-1 relative overflow-hidden">
-        {/* Background Image */}
+        {/* Background Image - Now using the app feature image */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: 'url(/lovable-uploads/05d94f8d-d250-4c10-99f8-f6d86e2f39d3.png)'
+            backgroundImage: 'url(/lovable-uploads/16148200-7bc2-414c-b328-a94beb787b73.png)'
           }}
         >
           {/* Overlay */}
@@ -84,9 +70,8 @@ const Index = () => {
         {/* Content */}
         <div className="relative z-10 h-full flex items-center justify-center p-8 lg:p-16">
           <div className="text-center text-white max-w-2xl">
-            {/* Main Heading */}
+            {/* Main Heading - Removed "SofaScore" */}
             <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
-              <span className="text-white">SofaScore</span>
               <span className="block text-2xl lg:text-3xl font-normal mt-2 text-gray-200">
                 Your Football Fix, Again
               </span>
@@ -96,13 +81,6 @@ const Index = () => {
             <p className="text-xl lg:text-2xl text-gray-200 mb-8 leading-relaxed">
               Get Live scores, stats, and free match streams.
             </p>
-
-            {/* CTA Button */}
-            <button 
-              className="bg-[#384df5] hover:bg-[#2a3ee3] text-white px-12 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
-            >
-              Start Watching Now
-            </button>
 
             {/* Features Grid */}
             <div className="grid grid-cols-3 gap-8 mt-12 text-center">
