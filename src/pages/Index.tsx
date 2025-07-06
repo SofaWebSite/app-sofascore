@@ -5,7 +5,7 @@ const Index = () => {
   return (
     <>
       {/* Desktop Layout */}
-      <div className="min-h-screen bg-white hidden lg:flex">
+      <div className="min-h-screen bg-white hidden lg:flex font-poppins">
         {/* Left Side - App Features */}
         <div className="w-2/5 bg-black text-white p-16 flex flex-col justify-between relative overflow-hidden">
           {/* Logo */}
@@ -15,7 +15,7 @@ const Index = () => {
               alt="SofaScore Logo" 
               className="w-8 h-8 mr-3"
             />
-            <span className="text-2xl font-bold" style={{fontFamily: 'Poppins, sans-serif'}}>SofaScore</span>
+            <span className="text-2xl font-bold">SofaScore</span>
           </div>
 
           {/* App Feature Image */}
@@ -73,14 +73,14 @@ const Index = () => {
           <div className="relative z-10 h-full flex items-center justify-center p-16">
             <div className="text-center text-white max-w-2xl">
               {/* Main Heading */}
-              <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight" style={{fontFamily: 'Poppins, sans-serif'}}>
-                <span className="block text-2xl lg:text-3xl font-normal mt-2 text-gray-200" style={{fontFamily: 'Poppins, sans-serif'}}>
+              <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
+                <span className="block text-2xl lg:text-3xl font-normal mt-2 text-gray-200">
                   Your Football Fix, Again
                 </span>
               </h1>
 
               {/* Subheading */}
-              <p className="text-xl lg:text-2xl text-gray-200 mb-8 leading-relaxed" style={{fontFamily: 'Poppins, sans-serif'}}>
+              <p className="text-xl lg:text-2xl text-gray-200 mb-8 leading-relaxed">
                 Get Live scores, stats, and free match streams.
               </p>
             </div>
@@ -89,7 +89,7 @@ const Index = () => {
       </div>
 
       {/* Mobile Layout */}
-      <div className="lg:hidden bg-black text-white min-h-screen flex flex-col">
+      <div className="lg:hidden bg-black text-white min-h-screen flex flex-col font-poppins">
         {/* Top Section - Logo */}
         <div className="p-6 pt-12">
           <div className="flex items-center justify-center mb-6">
@@ -98,7 +98,7 @@ const Index = () => {
               alt="SofaScore Logo" 
               className="w-6 h-6 mr-2"
             />
-            <span className="text-xl font-bold" style={{fontFamily: 'Poppins, sans-serif'}}>SofaScore</span>
+            <span className="text-xl font-bold">SofaScore</span>
           </div>
         </div>
 
@@ -156,12 +156,12 @@ const Index = () => {
           <div className="relative z-10 h-full flex items-end justify-center p-6 pb-12">
             <div className="text-center text-white">
               {/* Main Heading */}
-              <h1 className="text-2xl font-bold mb-2 leading-tight" style={{fontFamily: 'Poppins, sans-serif'}}>
+              <h1 className="text-2xl font-bold mb-2 leading-tight">
                 Your Football Fix, Again
               </h1>
 
               {/* Subheading */}
-              <p className="text-base text-gray-200 leading-relaxed" style={{fontFamily: 'Poppins, sans-serif'}}>
+              <p className="text-base text-gray-200 leading-relaxed">
                 Get Live scores, stats, and free match streams.
               </p>
             </div>
