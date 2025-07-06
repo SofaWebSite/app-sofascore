@@ -74,10 +74,7 @@ const Index = () => {
             <div className="text-center text-white max-w-2xl">
               {/* Main Heading */}
               <h1 className="text-5xl lg:text-8xl font-bold mb-6 leading-tight font-ubuntu text-glow-orange">
-                SOFASCORE
-                <span className="block text-3xl lg:text-5xl font-bold mt-4 text-glow-blue font-ubuntu">
-                  Your Football Fix, Again
-                </span>
+                Your Football Fix, Again
               </h1>
 
               {/* Subheading */}
@@ -158,11 +155,8 @@ const Index = () => {
             <div className="text-center text-white">
               {/* Main Heading */}
               <h1 className="text-3xl font-bold mb-4 leading-tight font-ubuntu text-glow-orange">
-                SOFASCORE
-              </h1>
-              <h2 className="text-xl font-bold mb-4 leading-tight font-ubuntu text-glow-blue">
                 Your Football Fix, Again
-              </h2>
+              </h1>
 
               {/* Subheading */}
               <p className="text-lg text-white leading-relaxed font-ubuntu font-medium text-glow">
