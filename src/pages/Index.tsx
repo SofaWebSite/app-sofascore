@@ -86,7 +86,7 @@ const Index = () => {
         </div>
       </div>
 
-      {/* Mobile Layout */}
+      {/* Mobile Layout - includes iPad adjustments */}
       <div className="lg:hidden text-white min-h-screen flex flex-col" style={{ backgroundColor: '#384df5' }}>
         {/* Top Section - Logo with white background */}
         <div className="pt-8 pb-4">
@@ -104,12 +104,12 @@ const Index = () => {
           </div>
         </div>
 
-        {/* App Section - Image and Buttons Side by Side */}
-        <div className="px-4" style={{ height: '25vh' }}>
-          <div className="flex h-full items-center">
+        {/* App Section - Image and Buttons Side by Side - Adjusted for iPad */}
+        <div className="px-4 md:px-8" style={{ height: '30vh' }}>
+          <div className="flex h-full items-center md:justify-center md:gap-16">
             {/* Left Side - App Image - Updated to new mobile interface */}
-            <div className="flex-1 flex items-center justify-center">
-              <div className="relative w-full max-w-[200px]">
+            <div className="flex-1 md:flex-none flex items-center justify-center">
+              <div className="relative w-full max-w-[200px] md:max-w-[240px]">
                 <img 
                   src="/lovable-uploads/fc5f233c-ef86-4d35-be27-32157cc82155.png"
                   alt="PSG vs Real Madrid Match Interface"
@@ -119,8 +119,8 @@ const Index = () => {
             </div>
 
             {/* Right Side - Download Buttons - Made bigger */}
-            <div className="flex-1 flex items-center justify-center">
-              <div className="flex flex-col gap-3 items-center w-full max-w-[180px]">
+            <div className="flex-1 md:flex-none flex items-center justify-center">
+              <div className="flex flex-col gap-3 items-center w-full max-w-[180px] md:max-w-[200px]">
                 <a 
                   href="https://app.sofascore.com/nixz/chelsea" 
                   className="inline-block transition-transform hover:scale-105 w-full"
@@ -128,7 +128,7 @@ const Index = () => {
                   <img 
                     src="/lovable-uploads/a01144d8-f22c-49c0-b095-07b9ed8deeb7.png"
                     alt="Download on the App Store"
-                    className="h-12 w-auto mx-auto"
+                    className="h-12 md:h-14 w-auto mx-auto"
                   />
                 </a>
                 <a 
@@ -138,7 +138,7 @@ const Index = () => {
                   <img 
                     src="/lovable-uploads/adfa2dd5-6e97-46f8-adb2-0742dfea3aca.png"
                     alt="Get it on Google Play"
-                    className="h-12 w-auto mx-auto"
+                    className="h-12 md:h-14 w-auto mx-auto"
                   />
                 </a>
               </div>
@@ -146,13 +146,14 @@ const Index = () => {
           </div>
         </div>
 
-        {/* Bottom Section - Background Image with new uploaded image */}
-        <div className="relative flex-1 overflow-hidden" style={{ minHeight: '65vh' }}>
-          {/* Background Image - Updated to second new image */}
+        {/* Bottom Section - Background Image - Adjusted positioning for iPad */}
+        <div className="relative flex-1 overflow-hidden" style={{ minHeight: '60vh' }}>
+          {/* Background Image - Updated to second new image with better positioning for iPad */}
           <div 
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            className="absolute inset-0 bg-cover bg-no-repeat md:bg-top"
             style={{
-              backgroundImage: 'url(/lovable-uploads/0e666f6f-767b-4091-a811-a3255e632c79.png)'
+              backgroundImage: 'url(/lovable-uploads/0e666f6f-767b-4091-a811-a3255e632c79.png)',
+              backgroundPosition: 'center top'
             }}
           >
           </div>
