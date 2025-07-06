@@ -146,32 +146,22 @@ const Index = () => {
           </div>
         </div>
 
-        {/* Bottom Section - Stadium Background with Text (Expanded) */}
+        {/* Bottom Section - New Background Image (No Text) */}
         <div className="relative flex-1 overflow-hidden" style={{ minHeight: '65vh' }}>
-          {/* Background Image */}
+          {/* Background Image - Changed to new image */}
           <div 
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style={{
-              backgroundImage: 'url(/lovable-uploads/16148200-7bc2-414c-b328-a94beb787b73.png)'
+              backgroundImage: 'url(/lovable-uploads/824d7514-3739-488e-b211-41fddd45e9ce.png)'
             }}
           >
             {/* Overlay - Darkened */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/70 to-black/30"></div>
           </div>
 
-          {/* Content */}
+          {/* Content - Removed text content */}
           <div className="relative z-10 h-full flex items-end justify-center p-6 pb-16">
-            <div className="text-center text-white">
-              {/* Main Heading */}
-              <h1 className="text-3xl font-bold mb-4 leading-tight font-ubuntu text-glow-orange">
-                Your Football Fix, Again
-              </h1>
-
-              {/* Subheading */}
-              <p className="text-lg text-white leading-relaxed font-ubuntu font-medium text-glow">
-                Get Live scores, stats, and free match streams.
-              </p>
-            </div>
+            {/* Text content removed as requested */}
           </div>
         </div>
       </div>
