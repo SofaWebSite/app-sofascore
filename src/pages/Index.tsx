@@ -146,20 +146,18 @@ const Index = () => {
           </div>
         </div>
 
-        {/* Bottom Section - New Background Image (No Text) */}
+        {/* Bottom Section - Background Image without dark overlay */}
         <div className="relative flex-1 overflow-hidden" style={{ minHeight: '65vh' }}>
-          {/* Background Image - Changed to new blue background with football player */}
+          {/* Background Image - No overlay */}
           <div 
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style={{
               backgroundImage: 'url(/lovable-uploads/69ff83c3-e33e-4728-97c9-2b4dcd7d9062.png)'
             }}
           >
-            {/* Overlay - Darkened */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/70 to-black/30"></div>
           </div>
 
-          {/* Content - Removed text content */}
+          {/* Content */}
           <div className="relative z-10 h-full flex items-end justify-center p-6 pb-16">
             {/* Text content removed as requested */}
           </div>
