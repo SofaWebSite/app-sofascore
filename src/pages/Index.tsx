@@ -87,16 +87,20 @@ const Index = () => {
       </div>
 
       {/* Mobile Layout */}
-      <div className="lg:hidden bg-black text-white min-h-screen flex flex-col">
-        {/* Top Section - Logo */}
+      <div className="lg:hidden text-white min-h-screen flex flex-col" style={{ backgroundColor: '#384df5' }}>
+        {/* Top Section - Logo with white background */}
         <div className="pt-8 pb-4">
           <div className="flex items-center justify-center">
-            <img 
-              src="/lovable-uploads/c671c2d1-6720-4c4d-9ed0-1068f8bb33d1.png" 
-              alt="Sofa Logo" 
-              className="w-6 h-6 mr-2"
-            />
-            <span className="text-xl font-bold font-ubuntu text-glow">Sofa</span>
+            <div className="bg-white rounded-full px-4 py-2 border border-gray-200">
+              <div className="flex items-center">
+                <img 
+                  src="/lovable-uploads/c671c2d1-6720-4c4d-9ed0-1068f8bb33d1.png" 
+                  alt="Sofa Logo" 
+                  className="w-6 h-6 mr-2"
+                />
+                <span className="text-xl font-bold font-ubuntu text-black">Sofa</span>
+              </div>
+            </div>
           </div>
         </div>
 
