@@ -1,20 +1,21 @@
+
 import React, { useEffect, useState } from 'react';
 
 const Index = () => {
   const [fontLoaded, setFontLoaded] = useState(false);
 
   useEffect(() => {
-    // Force Inter font on the entire document
-    document.documentElement.style.fontFamily = 'Inter, sans-serif';
-    document.body.style.fontFamily = 'Inter, sans-serif';
+    // Force Ubuntu font on the entire document
+    document.documentElement.style.fontFamily = 'Ubuntu, sans-serif';
+    document.body.style.fontFamily = 'Ubuntu, sans-serif';
     
     // Simple font load check
     const checkFont = () => {
-      if (document.fonts.check('12px Inter')) {
+      if (document.fonts.check('12px Ubuntu')) {
         setFontLoaded(true);
-        console.log("Inter font is ready");
+        console.log("Ubuntu font is ready");
       } else {
-        console.log("Waiting for Inter font...");
+        console.log("Waiting for Ubuntu font...");
         setTimeout(checkFont, 100);
       }
     };
@@ -24,14 +25,14 @@ const Index = () => {
 
   if (!fontLoaded) {
     return (
-      <div className="min-h-screen bg-black flex items-center justify-center font-inter">
-        <div className="text-white text-lg font-inter">Loading...</div>
+      <div className="min-h-screen bg-black flex items-center justify-center font-ubuntu">
+        <div className="text-white text-lg font-ubuntu font-bold text-glow">Loading...</div>
       </div>
     );
   }
 
   return (
-    <div className="font-inter">
+    <div className="font-ubuntu">
       {/* Desktop Layout */}
       <div className="min-h-screen bg-white hidden lg:flex">
         {/* Left Side - App Features */}
@@ -43,7 +44,7 @@ const Index = () => {
               alt="SofaScore Logo" 
               className="w-8 h-8 mr-3"
             />
-            <span className="text-2xl font-bold font-inter">SofaScore</span>
+            <span className="text-3xl font-bold font-ubuntu text-glow">SofaScore</span>
           </div>
 
           {/* App Feature Image */}
@@ -101,14 +102,15 @@ const Index = () => {
           <div className="relative z-10 h-full flex items-center justify-center p-16">
             <div className="text-center text-white max-w-2xl">
               {/* Main Heading */}
-              <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight font-inter">
-                <span className="block text-2xl lg:text-3xl font-normal mt-2 text-gray-200 font-inter">
+              <h1 className="text-5xl lg:text-8xl font-bold mb-6 leading-tight font-ubuntu text-glow-orange">
+                SOFASCORE
+                <span className="block text-3xl lg:text-5xl font-bold mt-4 text-glow-blue font-ubuntu">
                   Your Football Fix, Again
                 </span>
               </h1>
 
               {/* Subheading */}
-              <p className="text-xl lg:text-2xl text-gray-200 mb-8 leading-relaxed font-inter">
+              <p className="text-xl lg:text-3xl text-white mb-8 leading-relaxed font-ubuntu font-medium text-glow">
                 Get Live scores, stats, and free match streams.
               </p>
             </div>
@@ -126,7 +128,7 @@ const Index = () => {
               alt="SofaScore Logo" 
               className="w-6 h-6 mr-2"
             />
-            <span className="text-xl font-bold font-inter">SofaScore</span>
+            <span className="text-2xl font-bold font-ubuntu text-glow">SofaScore</span>
           </div>
         </div>
 
@@ -164,7 +166,7 @@ const Index = () => {
                 className="h-12 w-auto mx-auto"
               />
             </a>
-          </div>
+            </div>
         </div>
 
         {/* Bottom Section - Stadium Background with Text */}
@@ -184,12 +186,15 @@ const Index = () => {
           <div className="relative z-10 h-full flex items-end justify-center p-6 pb-12">
             <div className="text-center text-white">
               {/* Main Heading */}
-              <h1 className="text-2xl font-bold mb-2 leading-tight font-inter">
-                Your Football Fix, Again
+              <h1 className="text-3xl font-bold mb-4 leading-tight font-ubuntu text-glow-orange">
+                SOFASCORE
               </h1>
+              <h2 className="text-xl font-bold mb-4 leading-tight font-ubuntu text-glow-blue">
+                Your Football Fix, Again
+              </h2>
 
               {/* Subheading */}
-              <p className="text-base text-gray-200 leading-relaxed font-inter">
+              <p className="text-lg text-white leading-relaxed font-ubuntu font-medium text-glow">
                 Get Live scores, stats, and free match streams.
               </p>
             </div>
