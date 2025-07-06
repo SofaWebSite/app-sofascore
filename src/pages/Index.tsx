@@ -107,11 +107,11 @@ const Index = () => {
         {/* App Section - Image and Buttons Side by Side */}
         <div className="px-4" style={{ height: '25vh' }}>
           <div className="flex h-full items-center">
-            {/* Left Side - App Image */}
+            {/* Left Side - App Image - Updated to new mobile interface */}
             <div className="flex-1 flex items-center justify-center">
               <div className="relative w-full max-w-[200px]">
                 <img 
-                  src="/lovable-uploads/5b6097c5-8d28-466b-b9a3-a3e5edf1bbc0.png"
+                  src="/lovable-uploads/fc5f233c-ef86-4d35-be27-32157cc82155.png"
                   alt="PSG vs Real Madrid Match Interface"
                   className="w-full h-auto rounded-xl shadow-2xl"
                 />
@@ -148,11 +148,11 @@ const Index = () => {
 
         {/* Bottom Section - Background Image with new uploaded image */}
         <div className="relative flex-1 overflow-hidden" style={{ minHeight: '65vh' }}>
-          {/* Background Image - Updated to new image */}
+          {/* Background Image - Updated to second new image */}
           <div 
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style={{
-              backgroundImage: 'url(/lovable-uploads/f83adae9-08c1-412c-b1c6-48492e90eb58.png)'
+              backgroundImage: 'url(/lovable-uploads/0e666f6f-767b-4091-a811-a3255e632c79.png)'
             }}
           >
           </div>
