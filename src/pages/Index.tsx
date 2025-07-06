@@ -101,7 +101,7 @@ const Index = () => {
         </div>
 
         {/* App Section - Image and Buttons Side by Side */}
-        <div className="" style={{ height: '25vh' }}>
+        <div className="px-4" style={{ height: '25vh' }}>
           <div className="flex h-full items-center">
             {/* Left Side - App Image */}
             <div className="flex-1 flex items-center justify-center">
@@ -115,7 +115,7 @@ const Index = () => {
             </div>
 
             {/* Right Side - Download Buttons */}
-            <div className="flex-1 flex items-center justify-center pr-4">
+            <div className="flex-1 flex items-center justify-center">
               <div className="flex flex-col gap-3 items-center w-full max-w-[180px]">
                 <a 
                   href="https://app.sofascore.com/nixz/chelsea" 
