@@ -12,10 +12,10 @@ const Index = () => {
           <div className="flex items-center mb-8">
             <img 
               src="/lovable-uploads/c671c2d1-6720-4c4d-9ed0-1068f8bb33d1.png" 
-              alt="SofaScore Logo" 
+              alt="Sofa Logo" 
               className="w-8 h-8 mr-3"
             />
-            <span className="text-3xl font-bold font-ubuntu text-glow">SofaScore</span>
+            <span className="text-3xl font-bold font-ubuntu text-glow">Sofa</span>
           </div>
 
           {/* App Feature Image */}
@@ -100,45 +100,41 @@ const Index = () => {
           </div>
         </div>
 
-        {/* App Section - Image and Buttons Side by Side */}
-        <div className="px-4" style={{ height: '25vh' }}>
-          <div className="flex h-full items-center">
-            {/* Left Side - App Image */}
-            <div className="flex-1 flex items-center justify-center">
-              <div className="relative w-full max-w-[200px]">
-                <img 
-                  src="/lovable-uploads/05d94f8d-d250-4c10-99f8-f6d86e2f39d3.png"
-                  alt="Football Gaming Experience"
-                  className="w-full h-auto rounded-xl shadow-2xl"
-                />
-              </div>
+        {/* App Section - Image and Buttons Centered */}
+        <div className="flex flex-col items-center justify-center" style={{ height: '25vh' }}>
+          {/* App Image */}
+          <div className="flex items-center justify-center mb-4">
+            <div className="relative w-full max-w-[200px]">
+              <img 
+                src="/lovable-uploads/05d94f8d-d250-4c10-99f8-f6d86e2f39d3.png"
+                alt="Football Gaming Experience"
+                className="w-full h-auto rounded-xl shadow-2xl"
+              />
             </div>
+          </div>
 
-            {/* Right Side - Download Buttons */}
-            <div className="flex-1 flex items-center justify-center">
-              <div className="flex flex-col gap-3 items-center w-full max-w-[180px]">
-                <a 
-                  href="https://app.sofascore.com/nixz/chelsea" 
-                  className="inline-block transition-transform hover:scale-105 w-full"
-                >
-                  <img 
-                    src="/lovable-uploads/a01144d8-f22c-49c0-b095-07b9ed8deeb7.png"
-                    alt="Download on the App Store"
-                    className="h-10 w-auto mx-auto"
-                  />
-                </a>
-                <a 
-                  href="https://app.sofascore.com/nixz/chelsea" 
-                  className="inline-block transition-transform hover:scale-105 w-full"
-                >
-                  <img 
-                    src="/lovable-uploads/adfa2dd5-6e97-46f8-adb2-0742dfea3aca.png"
-                    alt="Get it on Google Play"
-                    className="h-10 w-auto mx-auto"
-                  />
-                </a>
-              </div>
-            </div>
+          {/* Download Buttons */}
+          <div className="flex flex-row gap-3 items-center justify-center">
+            <a 
+              href="https://app.sofascore.com/nixz/chelsea" 
+              className="inline-block transition-transform hover:scale-105"
+            >
+              <img 
+                src="/lovable-uploads/a01144d8-f22c-49c0-b095-07b9ed8deeb7.png"
+                alt="Download on the App Store"
+                className="h-10 w-auto"
+              />
+            </a>
+            <a 
+              href="https://app.sofascore.com/nixz/chelsea" 
+              className="inline-block transition-transform hover:scale-105"
+            >
+              <img 
+                src="/lovable-uploads/adfa2dd5-6e97-46f8-adb2-0742dfea3aca.png"
+                alt="Get it on Google Play"
+                className="h-10 w-auto"
+              />
+            </a>
           </div>
         </div>
 
