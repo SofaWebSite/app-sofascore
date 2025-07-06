@@ -29,13 +29,13 @@ const Index = () => {
 
         {/* Download Buttons */}
         <div className="max-w-lg">
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a 
               href="#" 
               className="inline-block transition-transform hover:scale-105"
             >
               <img 
-                src="/lovable-uploads/be02269c-dc6f-4ca4-a847-fa443ec8b9f1.png"
+                src="/lovable-uploads/a01144d8-f22c-49c0-b095-07b9ed8deeb7.png"
                 alt="Download on the App Store"
                 className="h-14 w-auto"
               />
@@ -45,7 +45,7 @@ const Index = () => {
               className="inline-block transition-transform hover:scale-105"
             >
               <img 
-                src="/lovable-uploads/3f864a0f-9766-474a-ab12-7d7d23a61d57.png"
+                src="/lovable-uploads/adfa2dd5-6e97-46f8-adb2-0742dfea3aca.png"
                 alt="Get it on Google Play"
                 className="h-14 w-auto"
               />
