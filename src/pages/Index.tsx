@@ -73,7 +73,7 @@ const Index = () => {
           <div className="relative z-10 h-full flex items-center justify-center p-16">
             <div className="text-center text-white max-w-2xl">
               {/* Main Heading */}
-              <h1 className="text-5xl lg:text-8xl font-bold mb-6 leading-tight font-ubuntu text-glow-orange">
+              <h1 className="text-4xl lg:text-7xl font-bold mb-6 leading-tight font-ubuntu text-glow-orange">
                 Your Football Fix, Again
               </h1>
 
@@ -154,7 +154,7 @@ const Index = () => {
           <div className="relative z-10 h-full flex items-end justify-center p-6 pb-12">
             <div className="text-center text-white">
               {/* Main Heading */}
-              <h1 className="text-3xl font-bold mb-4 leading-tight font-ubuntu text-glow-orange">
+              <h1 className="text-2xl font-bold mb-4 leading-tight font-ubuntu text-glow-orange">
                 Your Football Fix, Again
               </h1>
 
