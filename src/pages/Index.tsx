@@ -1,7 +1,41 @@
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 const Index = () => {
+  const [fontLoaded, setFontLoaded] = useState(false);
+
+  useEffect(() => {
+    // Check if font is already loaded
+    if (document.fonts.check("1em Poppins")) {
+      setFontLoaded(true);
+      return;
+    }
+
+    // Load font and wait for it to be ready
+    const loadFont = async () => {
+      try {
+        await document.fonts.load("1em Poppins");
+        setFontLoaded(true);
+        console.log("Poppins font loaded successfully");
+      } catch (error) {
+        console.error("Failed to load Poppins font:", error);
+        // Set to true anyway to show content
+        setFontLoaded(true);
+      }
+    };
+
+    loadFont();
+  }, []);
+
+  // Show loading state while font is loading
+  if (!fontLoaded) {
+    return (
+      <div className="min-h-screen bg-black flex items-center justify-center">
+        <div className="text-white text-lg">Loading...</div>
+      </div>
+    );
+  }
+
   return (
     <>
       {/* Desktop Layout */}
