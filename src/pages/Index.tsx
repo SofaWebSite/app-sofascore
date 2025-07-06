@@ -73,14 +73,23 @@ const Index = () => {
           <div className="relative z-10 h-full flex items-center justify-center p-16">
             <div className="text-center text-white max-w-2xl">
               {/* Main Heading */}
-              <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
-                <span className="block text-2xl lg:text-3xl font-normal mt-2 text-gray-200">
+              <h1 
+                className="text-4xl lg:text-6xl font-bold mb-6 leading-tight"
+                style={{ fontFamily: "'Poppins', sans-serif" }}
+              >
+                <span 
+                  className="block text-2xl lg:text-3xl font-normal mt-2 text-gray-200"
+                  style={{ fontFamily: "'Poppins', sans-serif" }}
+                >
                   Your Football Fix, Again
                 </span>
               </h1>
 
               {/* Subheading */}
-              <p className="text-xl lg:text-2xl text-gray-200 mb-8 leading-relaxed">
+              <p 
+                className="text-xl lg:text-2xl text-gray-200 mb-8 leading-relaxed"
+                style={{ fontFamily: "'Poppins', sans-serif" }}
+              >
                 Get Live scores, stats, and free match streams.
               </p>
             </div>
@@ -156,12 +165,18 @@ const Index = () => {
           <div className="relative z-10 h-full flex items-end justify-center p-6 pb-12">
             <div className="text-center text-white">
               {/* Main Heading */}
-              <h1 className="text-2xl font-bold mb-2 leading-tight">
+              <h1 
+                className="text-2xl font-bold mb-2 leading-tight"
+                style={{ fontFamily: "'Poppins', sans-serif" }}
+              >
                 Your Football Fix, Again
               </h1>
 
               {/* Subheading */}
-              <p className="text-base text-gray-200 leading-relaxed">
+              <p 
+                className="text-base text-gray-200 leading-relaxed"
+                style={{ fontFamily: "'Poppins', sans-serif" }}
+              >
                 Get Live scores, stats, and free match streams.
               </p>
             </div>
