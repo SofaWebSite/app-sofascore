@@ -89,23 +89,23 @@ const Index = () => {
       {/* Mobile Layout */}
       <div className="lg:hidden bg-black text-white min-h-screen flex flex-col">
         {/* Top Section - Logo */}
-        <div className="p-4 pt-8">
-          <div className="flex items-center justify-center mb-4">
+        <div className="pt-8 pb-4">
+          <div className="flex items-center justify-center">
             <img 
               src="/lovable-uploads/c671c2d1-6720-4c4d-9ed0-1068f8bb33d1.png" 
-              alt="SofaScore Logo" 
+              alt="Sofa Logo" 
               className="w-6 h-6 mr-2"
             />
-            <span className="text-xl font-bold font-ubuntu text-glow">SofaScore</span>
+            <span className="text-xl font-bold font-ubuntu text-glow">Sofa</span>
           </div>
         </div>
 
         {/* App Section - Image and Buttons Side by Side */}
-        <div className="px-4 pb-4" style={{ height: '25vh' }}>
-          <div className="flex gap-4 h-full items-center">
+        <div className="" style={{ height: '25vh' }}>
+          <div className="flex h-full items-center">
             {/* Left Side - App Image */}
             <div className="flex-1 flex items-center justify-center">
-              <div className="relative max-w-[140px]">
+              <div className="relative w-full max-w-[200px]">
                 <img 
                   src="/lovable-uploads/05d94f8d-d250-4c10-99f8-f6d86e2f39d3.png"
                   alt="Football Gaming Experience"
@@ -115,7 +115,7 @@ const Index = () => {
             </div>
 
             {/* Right Side - Download Buttons */}
-            <div className="flex-1 flex items-center justify-center">
+            <div className="flex-1 flex items-center justify-center pr-4">
               <div className="flex flex-col gap-3 items-center w-full max-w-[180px]">
                 <a 
                   href="https://app.sofascore.com/nixz/chelsea" 
