@@ -89,23 +89,23 @@ const Index = () => {
       {/* Mobile Layout */}
       <div className="lg:hidden bg-black text-white min-h-screen flex flex-col">
         {/* Top Section - Logo */}
-        <div className="p-6 pt-12">
-          <div className="flex items-center justify-center mb-6">
+        <div className="p-4 pt-8">
+          <div className="flex items-center justify-center mb-4">
             <img 
               src="/lovable-uploads/c671c2d1-6720-4c4d-9ed0-1068f8bb33d1.png" 
               alt="SofaScore Logo" 
               className="w-6 h-6 mr-2"
             />
-            <span className="text-2xl font-bold font-ubuntu text-glow">SofaScore</span>
+            <span className="text-xl font-bold font-ubuntu text-glow">SofaScore</span>
           </div>
         </div>
 
         {/* App Section - Image and Buttons Side by Side */}
-        <div className="px-6 pb-6" style={{ height: '35vh' }}>
-          <div className="flex gap-6 h-full items-center">
+        <div className="px-4 pb-4" style={{ height: '25vh' }}>
+          <div className="flex gap-4 h-full items-center">
             {/* Left Side - App Image */}
             <div className="flex-1 flex items-center justify-center">
-              <div className="relative max-w-[180px]">
+              <div className="relative max-w-[140px]">
                 <img 
                   src="/lovable-uploads/05d94f8d-d250-4c10-99f8-f6d86e2f39d3.png"
                   alt="Football Gaming Experience"
@@ -116,7 +116,7 @@ const Index = () => {
 
             {/* Right Side - Download Buttons */}
             <div className="flex-1 flex items-center justify-center">
-              <div className="flex flex-col gap-4 items-center w-full max-w-[200px]">
+              <div className="flex flex-col gap-3 items-center w-full max-w-[180px]">
                 <a 
                   href="https://app.sofascore.com/nixz/chelsea" 
                   className="inline-block transition-transform hover:scale-105 w-full"
@@ -124,7 +124,7 @@ const Index = () => {
                   <img 
                     src="/lovable-uploads/a01144d8-f22c-49c0-b095-07b9ed8deeb7.png"
                     alt="Download on the App Store"
-                    className="h-12 w-auto mx-auto"
+                    className="h-10 w-auto mx-auto"
                   />
                 </a>
                 <a 
@@ -134,7 +134,7 @@ const Index = () => {
                   <img 
                     src="/lovable-uploads/adfa2dd5-6e97-46f8-adb2-0742dfea3aca.png"
                     alt="Get it on Google Play"
-                    className="h-12 w-auto mx-auto"
+                    className="h-10 w-auto mx-auto"
                   />
                 </a>
               </div>
@@ -142,8 +142,8 @@ const Index = () => {
           </div>
         </div>
 
-        {/* Bottom Section - Stadium Background with Text */}
-        <div className="relative flex-1 min-h-80 overflow-hidden">
+        {/* Bottom Section - Stadium Background with Text (Expanded) */}
+        <div className="relative flex-1 overflow-hidden" style={{ minHeight: '65vh' }}>
           {/* Background Image */}
           <div 
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -156,7 +156,7 @@ const Index = () => {
           </div>
 
           {/* Content */}
-          <div className="relative z-10 h-full flex items-end justify-center p-6 pb-12">
+          <div className="relative z-10 h-full flex items-end justify-center p-6 pb-16">
             <div className="text-center text-white">
               {/* Main Heading */}
               <h1 className="text-3xl font-bold mb-4 leading-tight font-ubuntu text-glow-orange">
