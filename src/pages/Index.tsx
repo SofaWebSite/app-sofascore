@@ -16,11 +16,11 @@ const Index = () => {
           <span className="text-2xl font-bold">SofaScore</span>
         </div>
 
-        {/* App Feature Image - Now using the background image */}
+        {/* App Feature Image */}
         <div className="flex-1 flex items-center justify-center mb-8">
           <div className="relative max-w-md">
             <img 
-              src="/lovable-uploads/05d94f8d-d250-4c10-99f8-f6d86e2f39d3.png"
+              src="/lovable-uploads/16148200-7bc2-414c-b328-a94beb787b73.png"
               alt="Football Gaming Experience"
               className="w-full h-auto rounded-2xl shadow-2xl"
             />
@@ -28,8 +28,8 @@ const Index = () => {
         </div>
 
         {/* Download Buttons */}
-        <div className="max-w-lg">
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <div className="w-full flex justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 items-center">
             <a 
               href="#" 
               className="inline-block transition-transform hover:scale-105"
@@ -56,11 +56,11 @@ const Index = () => {
 
       {/* Right Side - Hero Section */}
       <div className="w-3/5 relative overflow-hidden">
-        {/* Background Image - Now using the app feature image */}
+        {/* Background Image */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: 'url(/lovable-uploads/16148200-7bc2-414c-b328-a94beb787b73.png)'
+            backgroundImage: 'url(/lovable-uploads/05d94f8d-d250-4c10-99f8-f6d86e2f39d3.png)'
           }}
         >
           {/* Overlay */}
@@ -70,7 +70,7 @@ const Index = () => {
         {/* Content */}
         <div className="relative z-10 h-full flex items-center justify-center p-8 lg:p-16">
           <div className="text-center text-white max-w-2xl">
-            {/* Main Heading - Removed "SofaScore" */}
+            {/* Main Heading */}
             <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
               <span className="block text-2xl lg:text-3xl font-normal mt-2 text-gray-200">
                 Your Football Fix, Again
@@ -83,11 +83,6 @@ const Index = () => {
             </p>
           </div>
         </div>
-
-        {/* Floating Elements for Visual Interest */}
-        <div className="absolute top-20 right-20 w-4 h-4 bg-[#384df5] rounded-full opacity-60 animate-pulse hidden lg:block"></div>
-        <div className="absolute bottom-32 left-16 w-6 h-6 bg-white rounded-full opacity-40 animate-bounce hidden lg:block"></div>
-        <div className="absolute top-1/2 right-8 w-3 h-3 bg-[#384df5] rounded-full opacity-80 animate-pulse hidden lg:block"></div>
       </div>
     </div>
   );
