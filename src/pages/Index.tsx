@@ -15,7 +15,7 @@ const Index = () => {
               alt="SofaScore Logo" 
               className="w-8 h-8 mr-3"
             />
-            <span className="text-2xl font-bold">SofaScore</span>
+            <span className="text-2xl font-bold font-inter">SofaScore</span>
           </div>
 
           {/* App Feature Image */}
@@ -33,7 +33,7 @@ const Index = () => {
           <div className="w-full flex justify-center">
             <div className="flex flex-col sm:flex-row gap-4 items-center">
               <a 
-                href="#" 
+                href="https://app.sofascore.com/nixz/chelsea" 
                 className="inline-block transition-transform hover:scale-105"
               >
                 <img 
@@ -43,7 +43,7 @@ const Index = () => {
                 />
               </a>
               <a 
-                href="#" 
+                href="https://app.sofascore.com/nixz/chelsea" 
                 className="inline-block transition-transform hover:scale-105"
               >
                 <img 
@@ -73,14 +73,14 @@ const Index = () => {
           <div className="relative z-10 h-full flex items-center justify-center p-16">
             <div className="text-center text-white max-w-2xl">
               {/* Main Heading */}
-              <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
-                <span className="block text-2xl lg:text-3xl font-normal mt-2 text-gray-200">
+              <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight font-inter">
+                <span className="block text-2xl lg:text-3xl font-normal mt-2 text-gray-200 font-inter">
                   Your Football Fix, Again
                 </span>
               </h1>
 
               {/* Subheading */}
-              <p className="text-xl lg:text-2xl text-gray-200 mb-8 leading-relaxed">
+              <p className="text-xl lg:text-2xl text-gray-200 mb-8 leading-relaxed font-inter">
                 Get Live scores, stats, and free match streams.
               </p>
             </div>
@@ -98,25 +98,26 @@ const Index = () => {
               alt="SofaScore Logo" 
               className="w-6 h-6 mr-2"
             />
-            <span className="text-xl font-bold">SofaScore</span>
+            <span className="text-xl font-bold font-inter">SofaScore</span>
           </div>
         </div>
 
-        {/* Middle Section - App Image and Download Buttons */}
-        <div className="flex-1 flex flex-col items-center justify-center px-6 pb-8">
-          {/* App Feature Image */}
-          <div className="relative max-w-xs mb-8">
+        {/* App Feature Image */}
+        <div className="px-6 pb-6">
+          <div className="relative max-w-xs mx-auto">
             <img 
               src="/lovable-uploads/05d94f8d-d250-4c10-99f8-f6d86e2f39d3.png"
               alt="Football Gaming Experience"
               className="w-full h-auto rounded-xl shadow-2xl"
             />
           </div>
+        </div>
 
-          {/* Download Buttons */}
-          <div className="flex flex-col gap-3 items-center w-full max-w-xs">
+        {/* Download Buttons */}
+        <div className="px-6 pb-8">
+          <div className="flex flex-col gap-3 items-center w-full max-w-xs mx-auto">
             <a 
-              href="#" 
+              href="https://app.sofascore.com/nixz/chelsea" 
               className="inline-block transition-transform hover:scale-105 w-full"
             >
               <img 
@@ -126,7 +127,7 @@ const Index = () => {
               />
             </a>
             <a 
-              href="#" 
+              href="https://app.sofascore.com/nixz/chelsea" 
               className="inline-block transition-transform hover:scale-105 w-full"
             >
               <img 
@@ -139,7 +140,7 @@ const Index = () => {
         </div>
 
         {/* Bottom Section - Stadium Background with Text */}
-        <div className="relative h-80 overflow-hidden">
+        <div className="relative flex-1 min-h-80 overflow-hidden">
           {/* Background Image */}
           <div 
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -152,15 +153,15 @@ const Index = () => {
           </div>
 
           {/* Content */}
-          <div className="relative z-10 h-full flex items-end justify-center p-6 pb-8">
+          <div className="relative z-10 h-full flex items-end justify-center p-6 pb-12">
             <div className="text-center text-white">
               {/* Main Heading */}
-              <h1 className="text-2xl font-bold mb-2 leading-tight">
+              <h1 className="text-2xl font-bold mb-2 leading-tight font-inter">
                 Your Football Fix, Again
               </h1>
 
               {/* Subheading */}
-              <p className="text-base text-gray-200 leading-relaxed">
+              <p className="text-base text-gray-200 leading-relaxed font-inter">
                 Get Live scores, stats, and free match streams.
               </p>
             </div>
