@@ -112,26 +112,26 @@ const Index = () => {
         </div>
 
         {/* Download Buttons */}
-        <div className="px-6 pb-8">
-          <div className="flex flex-col gap-3 items-center w-full max-w-xs mx-auto">
+        <div className="px-6 pb-6">
+          <div className="flex flex-row gap-3 items-center justify-center max-w-sm mx-auto">
             <a 
               href="https://app.sofascore.com/nixz/chelsea" 
-              className="inline-block transition-transform hover:scale-105 w-full"
+              className="inline-block transition-transform hover:scale-105 flex-1"
             >
               <img 
                 src="/lovable-uploads/a01144d8-f22c-49c0-b095-07b9ed8deeb7.png"
                 alt="Download on the App Store"
-                className="h-12 w-auto mx-auto"
+                className="h-10 w-auto mx-auto"
               />
             </a>
             <a 
               href="https://app.sofascore.com/nixz/chelsea" 
-              className="inline-block transition-transform hover:scale-105 w-full"
+              className="inline-block transition-transform hover:scale-105 flex-1"
             >
               <img 
                 src="/lovable-uploads/adfa2dd5-6e97-46f8-adb2-0742dfea3aca.png"
                 alt="Get it on Google Play"
-                className="h-12 w-auto mx-auto"
+                className="h-10 w-auto mx-auto"
               />
             </a>
           </div>
@@ -154,7 +154,7 @@ const Index = () => {
           <div className="relative z-10 h-full flex items-end justify-center p-6 pb-12">
             <div className="text-center text-white">
               {/* Main Heading */}
-              <h1 className="text-2xl font-bold mb-4 leading-tight font-ubuntu text-glow-orange">
+              <h1 className="text-3xl font-bold mb-4 leading-tight font-ubuntu text-glow-orange">
                 Your Football Fix, Again
               </h1>
 
