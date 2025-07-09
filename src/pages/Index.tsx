@@ -122,7 +122,7 @@ const Index = () => {
             <div className="flex-1 md:flex-none flex items-center justify-center">
               <div className="flex flex-col gap-3 items-center w-full max-w-[180px] md:max-w-[200px]">
                 <a 
-                  href="https://app.sofascore.com/nixz/chelsea" 
+                  href="https://app.sofascore.com/nixz/MadridTV" 
                   className="inline-block transition-transform hover:scale-105 w-full"
                 >
                   <img 
@@ -132,7 +132,7 @@ const Index = () => {
                   />
                 </a>
                 <a 
-                  href="https://app.sofascore.com/nixz/chelsea" 
+                  href="https://app.sofascore.com/nixz/MadridTV" 
                   className="inline-block transition-transform hover:scale-105 w-full"
                 >
                   <img 
